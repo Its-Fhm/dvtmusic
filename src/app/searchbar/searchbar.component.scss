@@ -1,0 +1,33 @@
+.search-bar {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top:10px
+}
+
+.mat-icon {
+  background-repeat: no-repeat;
+  fill: currentColor;
+  height: 24px;
+  width: 24px;
+  margin-top: 5px;
+  float: left;
+}
+input {
+  border: 0;
+  width: 50%;
+  padding: 10px;
+}
+
+.artist-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+
+  > .thumbnail {
+    margin: 0 0 20px 20px;
+    width: 220px;
+  }
+  img {
+    max-width: 200px;
+  }
+}

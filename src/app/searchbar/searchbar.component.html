@@ -1,0 +1,31 @@
+<div class="search-bar">
+  <input #input [(ngModel)]="textSearch" type="text" (keydown.enter)="startSearch()" placeholder="search">
+  <mat-icon>search</mat-icon>
+</div>
+
+<div class="artist-container">
+  <div class="thumbnail" *ngFor="let data of artistResults">
+    <div class="thumbnail-img"><img [src]="data.picture_medium"></div>
+    <div class="thumbnail-detail">
+      <div><a [routerLink]="['/artist-detail', data.id]">{{data.name}}</a></div>
+      <div>{{data.nb_album}} <i>Albums</i></div>
+      <div>{{data.nb_fan | shortNumber}} Fans</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- <div class="container">
+  <div class="row">
+    <mat-card class="example-card col-4 text-center" *ngFor="let data of artistResults">
+      <mat-card-title-group>
+        <img mat-card-lg-image [src]="data.picture_medium"> 
+      </mat-card-title-group>
+      <mat-card-content>
+        <a [routerLink]="['/artist-detail', data.id]">{{data.name}}</a>
+        <div>{{data.nb_album}} <i>Albums</i></div>
+        <div>{{data.nb_fan | shortNumber}} Fans</div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div> -->

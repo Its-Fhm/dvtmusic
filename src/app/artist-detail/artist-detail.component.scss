@@ -1,0 +1,48 @@
+.container{
+  padding: 20px;
+}
+.left {
+  display: inline-block;
+  width: 50%;
+}
+.right {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 0 10px 40px;
+  width: 40%;
+}
+.artist-header-text {
+  position: absolute;
+  top: 14%;
+  color: black;
+  text-shadow: 0px 0px 3px #fff;
+  padding-left: 10px;
+}
+.p-l {
+  padding-left: 10px;
+}
+.albums-section {
+  padding: 40px 10px 20px 10px;
+}
+.album-block {
+  display: inline-block;
+  vertical-align: text-top;
+  padding: 20px 10px;
+  max-width: 190px;
+}
+img.artist-thumb {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+img.cover_medium {
+  max-width: 150px;
+}
+.title {
+  width: 150px;
+}
+span.year {
+  font-weight: 200;
+  display: block;
+}

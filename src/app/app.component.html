@@ -1,0 +1,7 @@
+<mat-toolbar>
+  <span routerLink="/" routerLinkActive="active">My Application</span>
+</mat-toolbar>
+<div class="container">
+  <router-outlet></router-outlet>
+  <mat-progress-spinner [mode]="'indeterminate'" *ngIf="loading$ | async"></mat-progress-spinner>
+</div>
